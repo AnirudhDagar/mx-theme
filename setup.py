@@ -1,9 +1,12 @@
 from setuptools import setup
-from mxtheme import __version__
+
+with open('mxtheme/_version.py') as ver_file:
+    exec(ver_file.read())
 
 setup(
     name = 'mxtheme',
     version = __version__,
+    install_requires=['sphinx>=2.2.1'],
     author = 'Mu Li',
     author_email= '',
     url="https://github.com/mli/mx-theme",
